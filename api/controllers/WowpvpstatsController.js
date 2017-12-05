@@ -66,62 +66,62 @@ module.exports = {
                         } 
 
                         if (data.class === 2) {
-                            frame1.text = 'paladin',
+                            frame1.text = 'class: paladin',
                             frame1.icon = 'i15437';
                         }     
 
                         else if (data.class === 3) {
-                            frame1.text = 'hunter',
+                            frame1.text = 'class: hunter',
                             frame1.icon = 'i15434';
                         }     
 
                         else if (data.class === 4) {
-                            frame1.text = 'rogue',
+                            frame1.text = 'class: rogue',
                             frame1.icon = 'i15439';
                         }   
 
                         else if (data.class === 5) {
-                            frame1.text = 'priest',
+                            frame1.text = 'class: priest',
                             frame1.icon = 'i15438';
                         } 
 
                         else if (data.class === 6) {
-                            frame1.text = 'death knight',
+                            frame1.text = 'class: death knight',
                             frame1.icon = 'i15429';
                         }                         
 
                         else if (data.class === 7) {
-                            frame1.text = 'shaman',
+                            frame1.text = 'class: shaman',
                             frame1.icon = 'i15458';
                         }   
 
                         else if (data.class === 8) {
-                            frame1.text = 'mage',
+                            frame1.text = 'class: mage',
                             frame1.icon = 'i15435';
                         }                          
 
                         else if (data.class === 9) {
-                            frame1.text = 'warlock',
+                            frame1.text = 'class: warlock',
                             frame1.icon = 'i15463';
                         }  
 
                         else if (data.class === 10) {
-                            frame1.text = 'monk',
+                            frame1.text = 'class: monk',
                             frame1.icon = 'i15463';
                         }                         
 
                         else if (data.class === 11) {
-                            frame1.text = 'druid',
+                            frame1.text = 'class: druid',
                             frame1.icon = 'i15462';
                         }   
 
                         else if (data.class === 12) {
-                            frame1.text = 'demon hunter',
+                            frame1.text = 'class: demon hunter',
                             frame1.icon = 'i15430';
                         }  
 
                         else{
-                            frame1.text = 'warrior',
+                            frame1.text = 'class: warrior',
                             frame1.icon = 'i14684';
                         }                                        
                         
