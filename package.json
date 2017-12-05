@@ -1,7 +1,11 @@
 {
   "name": "wowpvpstats",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "engines": {
+    "node": "8.9.1",
+    "npm": "5.5.1"
+  },
   "description": "a Sails application",
   "keywords": [],
   "dependencies": {
@@ -20,17 +24,18 @@
     "grunt-sync": "0.5.2",
     "include-all": "^1.0.0",
     "rc": "1.0.1",
+    "request": "^2.83.0",
     "sails": "~0.12.14",
     "sails-disk": "~0.10.9"
   },
   "scripts": {
-    "debug": "node debug app.js",
-    "start": "node app.js"
+    "start": "sails lift",
+    "debug": "node debug app.js"
   },
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/anonymous node/sails user/wowpvpstats.git"
+    "url": "git://github.com/angelusreseda/wowpvpstats.git"
   },
   "author": "anonymous node/sails user",
   "license": ""
