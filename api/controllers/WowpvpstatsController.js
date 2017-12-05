@@ -21,7 +21,7 @@ module.exports = {
                         responseObj.frames=[];
                     
                         var frame0 = {
-                                'text': 'wow pvp stats for:',
+                                'text': 'wow pvp stats',
                                 'icon':'i14665',
                                 'index':0
                         };
@@ -58,7 +58,7 @@ module.exports = {
                     
                         else{
                         // Getting character stats from Blizzard API response.
-                            frame0.text = data.name,
+                            frame0.text = 'pvp stats for:' +data.name,
                             frame1.text = data.class,
                             frame2.text = data.pvp.brackets.ARENA_BRACKET_2v2.rating,
                             frame3.text = data.pvp.brackets.ARENA_BRACKET_3v3.rating,
