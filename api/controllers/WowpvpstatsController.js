@@ -45,7 +45,7 @@ module.exports = {
                         };    
 
                          var frame4 = {
-                                'text': 'rgb:',
+                                'text': 'rbg:',
                                 'icon':'i14684',
                                 'index':4
                         };                                                                                                               
@@ -62,7 +62,7 @@ module.exports = {
                             frame1.text = 'class: ' +data.class,
                             frame2.text = '2v2: ' +data.pvp.brackets.ARENA_BRACKET_2v2.rating,
                             frame3.text = '3v3: ' +data.pvp.brackets.ARENA_BRACKET_3v3.rating,
-                            frame4.text = 'rgb: ' +data.pvp.brackets.ARENA_BRACKET_RBG.rating;    
+                            frame4.text = 'rbg: ' +data.pvp.brackets.ARENA_BRACKET_RBG.rating;    
                         } 
 
                         if (data.class === 2) {
