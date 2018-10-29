@@ -21,31 +21,31 @@ module.exports = {
                         responseObj.frames=[];
                     
                         var frame0 = {
-                                'text': 'wow pvp stats',
+                                'text': 'pvp stats',
                                 'icon':'i14665',
                                 'index':0
                         };
                     
                         var frame1 = {
-                                'text': 'class:',
+                                'text': '',
                                 'icon':'',
                                 'index':1
                         };  
 
                         var frame2 = {
-                                'text': '2v2:',
+                                'text': '2s:',
                                 'icon':'i14684',
                                 'index':2
                         };    
 
                         var frame3 = {
-                                'text': '3v3:',
+                                'text': '3s:',
                                 'icon':'i14684',
                                 'index':3
                         };    
 
                          var frame4 = {
-                                'text': 'rbg:',
+                                'text': 'bg:',
                                 'icon':'i14684',
                                 'index':4
                         };                                                                                                               
@@ -58,70 +58,70 @@ module.exports = {
                     
                         else{
                         // Getting character stats from Blizzard API response.
-                            frame0.text = 'pvp stats for: ' +data.name,
-                            frame1.text = 'class: ' +data.class,
-                            frame2.text = '2v2: ' +data.pvp.brackets.ARENA_BRACKET_2v2.rating,
-                            frame3.text = '3v3: ' +data.pvp.brackets.ARENA_BRACKET_3v3.rating,
-                            frame4.text = 'rbg: ' +data.pvp.brackets.ARENA_BRACKET_RBG.rating;    
+                            frame0.text = 'pvp stats',
+                            frame1.text = data.name
+                            frame2.text = '2s:'+data.pvp.brackets.ARENA_BRACKET_2v2.rating,
+                            frame3.text = '3s:'+data.pvp.brackets.ARENA_BRACKET_3v3.rating,
+                            frame4.text = 'bg:'+data.pvp.brackets.ARENA_BRACKET_RBG.rating;    
                         } 
 
                         if (data.class === 2) {
-                            frame1.text = 'class: paladin',
+                            //frame1.text = 'class: paladin',
                             frame1.icon = 'i15437';
                         }     
 
                         else if (data.class === 3) {
-                            frame1.text = 'class: hunter',
+                            //frame1.text = 'class: hunter',
                             frame1.icon = 'i15434';
                         }     
 
                         else if (data.class === 4) {
-                            frame1.text = 'class: rogue',
+                            //frame1.text = 'class: rogue',
                             frame1.icon = 'i15439';
                         }   
 
                         else if (data.class === 5) {
-                            frame1.text = 'class: priest',
+                            //frame1.text = 'class: priest',
                             frame1.icon = 'i15438';
                         } 
 
                         else if (data.class === 6) {
-                            frame1.text = 'class: death knight',
+                            //frame1.text = 'class: death knight',
                             frame1.icon = 'i15429';
                         }                         
 
                         else if (data.class === 7) {
-                            frame1.text = 'class: shaman',
+                            //frame1.text = 'class: shaman',
                             frame1.icon = 'i15458';
                         }   
 
                         else if (data.class === 8) {
-                            frame1.text = 'class: mage',
+                            //frame1.text = 'class: mage',
                             frame1.icon = 'i15435';
                         }                          
 
                         else if (data.class === 9) {
-                            frame1.text = 'class: warlock',
+                            //frame1.text = 'class: warlock',
                             frame1.icon = 'i15463';
                         }  
 
                         else if (data.class === 10) {
-                            frame1.text = 'class: monk',
+                            //frame1.text = 'class: monk',
                             frame1.icon = 'i15463';
                         }                         
 
                         else if (data.class === 11) {
-                            frame1.text = 'class: druid',
+                           //frame1.text = 'class: druid',
                             frame1.icon = 'i15462';
                         }   
 
                         else if (data.class === 12) {
-                            frame1.text = 'class: demon hunter',
+                            //frame1.text = 'class: demon hunter',
                             frame1.icon = 'i15430';
                         }  
 
                         else{
-                            frame1.text = 'class: warrior',
+                            //frame1.text = 'class: warrior',
                             frame1.icon = 'i14684';
                         }                                        
                         
