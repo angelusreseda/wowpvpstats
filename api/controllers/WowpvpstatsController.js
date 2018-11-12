@@ -13,7 +13,7 @@ module.exports = {
                         if (err) {
                                 return res.send(err)
                         };
-						
+                        
                         // Building object for LaMetric. We will return it
                     
                         var responseObj={};
@@ -56,13 +56,11 @@ module.exports = {
                             frame2.text = 'DATA'
                         }   
                     
-                        else{
                         // Getting character stats from Blizzard API response.
+                        else{
                             frame0.text = 'WOW PVP',
-                            frame1.text = data.name
-                            //frame2.text = '2s:'+data.pvp.brackets.ARENA_BRACKET_2v2.rating,
-                            frame2.text = '3S:'+data.pvp.brackets.ARENA_BRACKET_3v3.rating,
-                            //frame4.text = 'bg:'+data.pvp.brackets.ARENA_BRACKET_RBG.rating;    
+                            frame1.text = data.name,
+                            frame2.text = '3S:'+data.pvp.brackets.ARENA_BRACKET_3v3.rating 
                         } 
 
                         if (data.class === 2) {
@@ -125,16 +123,17 @@ module.exports = {
                             frame1.icon = 'i14684';
                         }                                        
                         
-                        responseObj.frames.push(frame0, frame1, frame2, frame3, frame4);
-					
+                        responseObj.frames.push(frame0, frame1, frame2//, frame3, frame4
+                        );
+                    
                         if (!data) {
                             console.log("Error: ", response.statusCode);
                             res.status(response.statusCode).send(response.body);
                         } else {
                             console.log("Response: ", responseObj);
                             return res.status(200).json(responseObj);
-                        }					
-					
+                        }                   
+                    
                 })
         },
 };
