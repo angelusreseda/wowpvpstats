@@ -21,34 +21,34 @@ module.exports = {
                         responseObj.frames=[];
                     
                         var frame0 = {
-                                'text': 'pvp stats',
+                                'text': 'WOW PVP',
                                 'icon':'i14665',
                                 'index':0
                         };
                     
                         var frame1 = {
-                                'text': '',
+                                'text': 'NAME',
                                 'icon':'',
                                 'index':1
                         };  
 
                         var frame2 = {
-                                'text': '2s:',
+                                'text': '3s:',
                                 'icon':'i14684',
                                 'index':2
                         };    
 
-                        var frame3 = {
-                                'text': '3s:',
-                                'icon':'i14684',
-                                'index':3
-                        };    
+                        //var frame3 = {
+                        //        'text': '3s:',
+                        //        'icon':'i14684',
+                        //        'index':3
+                        //};    
 
-                         var frame4 = {
-                                'text': 'bg:',
-                                'icon':'i14684',
-                                'index':4
-                        };                                                                                                               
+                        //var frame4 = {
+                        //        'text': 'bg:',
+                        //        'icon':'i14684',
+                        //        'index':4
+                        //};                                                                                                               
 
                         // Checking if we have required parameters passed to our API. 
                         if (req.query.characterId === '' || req.query.characterId === undefined || req.query.serverId === '' || req.query.serverId === undefined || req.query.regionId === '' || req.query.regionId === undefined) {
@@ -58,11 +58,11 @@ module.exports = {
                     
                         else{
                         // Getting character stats from Blizzard API response.
-                            frame0.text = 'pvp stats',
+                            frame0.text = 'WOW PVP',
                             frame1.text = data.name
-                            frame2.text = '2s:'+data.pvp.brackets.ARENA_BRACKET_2v2.rating,
-                            frame3.text = '3s:'+data.pvp.brackets.ARENA_BRACKET_3v3.rating,
-                            frame4.text = 'bg:'+data.pvp.brackets.ARENA_BRACKET_RBG.rating;    
+                            //frame2.text = '2s:'+data.pvp.brackets.ARENA_BRACKET_2v2.rating,
+                            frame2.text = '3S:'+data.pvp.brackets.ARENA_BRACKET_3v3.rating,
+                            //frame4.text = 'bg:'+data.pvp.brackets.ARENA_BRACKET_RBG.rating;    
                         } 
 
                         if (data.class === 2) {
